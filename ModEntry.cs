@@ -14,8 +14,7 @@ namespace JumpKing_UpsideDownBlocks
         [BeforeLevelLoad]
         public static void BeforeLevelLoad()
         {
-            LevelManager.RegisterBlockFactory(new Factries.Basic());
-            UpsideDownCore.Controller.Reset();
+            LevelManager.RegisterBlockFactory(new Factories.Basic());
         }
 
         /// <summary>
