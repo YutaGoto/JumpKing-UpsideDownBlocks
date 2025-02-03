@@ -48,21 +48,21 @@
       <HintPath>C:\Program Files (x86)\Steam\steamapps\common\Jump King\MonoGame.Framework.dll</HintPath>
     </Reference>
     <Reference Include="UpSideDownCore">
-      <HintPath>..\packages\UpSideDownCore\UpSideDownCore.dll</HintPath>
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\workshop\content\1061090\3410235901\UpSideDownCore.dll</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Behaviors\UpsideDown.cs" />
-    <Compile Include="Blocks\UpsideDown.cs" />
-    <Compile Include="Constants\ColorCodes.cs" />
-    <Compile Include="Factries\Basic.cs" />
+    <Compile Include="Behaviors\*.cs" />
+    <Compile Include="Blocks\*.cs" />
+    <Compile Include="Constants\*.cs" />
+    <Compile Include="Factories\Basic.cs" />
     <Compile Include="ModEntry.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
   </Target>

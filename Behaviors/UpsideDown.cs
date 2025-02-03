@@ -44,9 +44,9 @@ namespace JumpKing_UpsideDownBlocks.Behaviors
         /// <inheritdoc/>
         public bool ExecuteBlockBehaviour(BehaviourContext behaviourContext)
         {
-            if (behaviourContext?.CollisionInfo?.StartOfFrameCollisionInfo != null)
+            if (behaviourContext?.CollisionInfo?.PreResolutionCollisionInfo != null)
             {
-                IsPlayerOnBlock = behaviourContext.CollisionInfo.StartOfFrameCollisionInfo.IsCollidingWith<Blocks.UpsideDown>();
+                IsPlayerOnBlock = behaviourContext.CollisionInfo.PreResolutionCollisionInfo.IsCollidingWith<Blocks.UpsideDown>();
             }
 
             if (IsPlayerOnBlock)

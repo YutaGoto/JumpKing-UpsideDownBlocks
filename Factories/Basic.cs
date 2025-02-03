@@ -7,7 +7,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 
-namespace JumpKing_UpsideDownBlocks.Factries
+namespace JumpKing_UpsideDownBlocks.Factories
 {
     internal class Basic : IBlockFactory
     {
